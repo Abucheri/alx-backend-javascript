@@ -1,5 +1,8 @@
 #  0x00. ES6 Basics 
 
+![08806026ef621f900121](https://github.com/Abucheri/alx-backend-javascript/assets/24778489/260a4b55-8c49-4673-81bd-07c28cefa5df)
+
+
 ## Setup
 ### Install NodeJS 12.11.x
 
