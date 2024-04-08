@@ -2,7 +2,6 @@
 
 ![08806026ef621f900121](https://github.com/Abucheri/alx-backend-javascript/assets/24778489/260a4b55-8c49-4673-81bd-07c28cefa5df)
 
-
 ## Setup
 ### Install NodeJS 12.11.x
 
@@ -410,6 +409,7 @@ Don’t forget to run `npm install` from the terminal of your project folder to 
 
  10. For...of Loops 
 	- Rewrite the function `appendToEachArrayValue` to use ES6’s `for...of` operator. And don’t forget that `var` is not ES6-friendly.
+
 	```
 	export default function appendToEachArrayValue(array, appendString) {
 	  for (var idx in array) {
@@ -420,7 +420,9 @@ Don’t forget to run `npm install` from the terminal of your project folder to 
 	  return array;
 	}
 	```
-	- Execution:
+ 
+- Execution:
+ 
 	```
 	bob@dylan:~$ cat 10-main.js
 	import appendToEachArrayValue from './10-loops.js';
@@ -437,12 +439,13 @@ Don’t forget to run `npm install` from the terminal of your project folder to 
 	- Write a function named `createEmployeesObject` that will receive two arguments:
 		- `departmentName` (`String`)
 		- `employees` (`Array of Strings`)
+
 	```
 	export default function createEmployeesObject(departmentName, employees) {
 
 	}
 	```
-	- The function should return an object with the following format:
+- The function should return an object with the following format:
 	```
 	{
 	     $departmentName: [
@@ -465,14 +468,15 @@ Don’t forget to run `npm install` from the terminal of your project folder to 
 
  12. Let's create a report object 
 	- Write a function named `createReportObject` whose parameter, `employeesList`, is the return value of the previous function `createEmployeesObject`.
+
 	```
 	export default function createReportObject(employeesList) {
 
 	}
 	```
-	- `createReportObject` should return an object containing the key `allEmployees` and a method property called `getNumberOfDepartments`. 
-	- `allEmployees` is a key that maps to an object containing the department name and a list of all the employees in that department. If you’re having trouble, use the spread syntax.
-	- The method property receives `employeesList` and returns the number of departments. I would suggest suggest thinking back to the ES6 method property syntax.
+- `createReportObject` should return an object containing the key `allEmployees` and a method property called `getNumberOfDepartments`. 
+- `allEmployees` is a key that maps to an object containing the department name and a list of all the employees in that department. If you’re having trouble, use the spread syntax.
+- The method property receives `employeesList` and returns the number of departments. I would suggest suggest thinking back to the ES6 method property syntax.
 	```
 	{
 	  allEmployees: {
@@ -508,12 +512,13 @@ Don’t forget to run `npm install` from the terminal of your project folder to 
  13. Iterating through report objects 
 	- Write a function named `createIteratorObject`, that will take into argument a report Object created with the previous function `createReportObject`. 
 	- This function will return an iterator to go through every employee in every department.
+
 	```
 	export default function createIteratorObject(report) {
 
 	}
 	```
-	- Execution:
+- Execution:
 	```
 	bob@dylan:~$ cat 100-main.js
 	import createIteratorObject from "./100-createIteratorObject.js";
@@ -544,12 +549,13 @@ Don’t forget to run `npm install` from the terminal of your project folder to 
 
  14. Iterate through object 
 	- Finally, write a function named `iterateThroughObject`. The function’s parameter `reportWithIterator` is the return value from `createIteratorObject`.
+
 	```
 	export default function iterateThroughObject(reportWithIterator) {
 
  	}
 	```
-	- It should return every employee name in a string, separated by `|`
+- It should return every employee name in a string, separated by `|`
 	```
 	{
 	  allEmployees: {
