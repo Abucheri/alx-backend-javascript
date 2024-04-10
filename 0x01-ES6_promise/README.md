@@ -1,5 +1,8 @@
 # 0x01. ES6 Promises
 
+![75862d67ca51a042003c](https://github.com/Abucheri/alx-backend-javascript/assets/24778489/d116d2ad-1977-41b6-bfa4-529c3f452466)
+
+
 ## Setup
 ### Install NodeJS 12.11.x
 
