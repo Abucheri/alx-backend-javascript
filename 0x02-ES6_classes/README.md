@@ -1,5 +1,8 @@
 # 0x02. ES6 classes
 
+![817248fb77fb5c2cef3f](https://github.com/Abucheri/alx-backend-javascript/assets/24778489/2a480982-016f-42f1-9b4c-2e20bbfbe197)
+
+
 ## Setup
 
 ### Install NodeJS 12.11.x
