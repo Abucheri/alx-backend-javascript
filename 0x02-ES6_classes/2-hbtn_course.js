@@ -1,52 +1,55 @@
 export default class HolbertonCourse {
   constructor(name, length, students) {
-    this._name = this.validateString(name, 'Name');
-    this._length = this.validateNumber(length, 'Length');
-    this._students = this.validateArray(students, 'Students');
+    if (typeof name !== 'string') {
+      throw TypeError('name must be a String');
+    }
+    if (typeof length !== 'number') {
+      throw TypeError('length must be a Number');
+    }
+    if (!Array.isArray(students)) {
+      throw TypeError('students must be an Array');
+    }
+    if (students.some((student) => typeof student !== 'string')) {
+      throw TypeError('students must be an Array of Strings');
+    }
+    this._name = name;
+    this._length = length;
+    this._students = students;
   }
 
   get name() {
     return this._name;
   }
 
-  set name(newName) {
-    this._name = this.validateString(newName, 'Name');
+  set name(value) {
+    if (typeof value !== 'string') {
+      throw TypeError('name must be a String');
+    }
+    this._name = value;
   }
 
   get length() {
     return this._length;
   }
 
-  set length(newLength) {
-    this._length = this.validateNumber(newLength, 'Length');
+  set length(value) {
+    if (typeof value !== 'number') {
+      throw TypeError('length must be a Number');
+    }
+    this._length = value;
   }
 
   get students() {
     return this._students;
   }
 
-  set students(newStudents) {
-    this._students = this.validateArray(newStudents, 'Students');
-  }
-
-  validateString(value, propName) {
-    if (typeof value !== 'string') {
-      throw new TypeError(`${propName} must be a string`);
+  set students(value) {
+    if (!Array.isArray(value)) {
+      throw TypeError('students must be an Array');
     }
-    return value;
-  }
-
-  validateNumber(value, propName) {
-    if (typeof value !== 'number') {
-      throw new TypeError(`${propName} must be a number`);
+    if (value.some((student) => typeof student !== 'string')) {
+      throw TypeError('students must be an Array of Strings');
     }
-    return value;
-  }
-
-  validateArray(value, propName) {
-    if (!Array.isArray(value) || value.some(item => typeof item !== 'string')) {
-      throw new TypeError(`${propName} must be an array of strings`);
-    }
-    return value;
+    this._students = value;
   }
 }
