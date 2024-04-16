@@ -1,5 +1,8 @@
 # 0x03. ES6 data manipulation
 
+![6ab7bec4727cb5c91257](https://github.com/Abucheri/alx-backend-javascript/assets/24778489/12b39db0-16bb-458b-b56e-44a05a98d01d)
+
+
 ## Setup
 
 ### Install NodeJS 12.11.x
