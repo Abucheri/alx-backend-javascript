@@ -1,9 +1,8 @@
 export default function cleanSet(set, startString) {
-  if (!startString || typeof startString !== 'string' || typeof set !== 'object') {
-    return '';
-  }
-  return [...set]
-    .filter((element) => element.startsWith(startString))
-    .map((element) => element.slice(startString.length))
-    .join('-');
+  let resultSet = '';
+  if (!startString || !startString.length) return resultSet;
+  set.forEach((element) => {
+    if (element && element.startsWith(startString)) resultSet += `${element.slice(startString.length)}-`;
+  });
+  return resultSet.slice(0, resultSet.length - 1);
 }
