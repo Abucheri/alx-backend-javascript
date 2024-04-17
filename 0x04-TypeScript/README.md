@@ -1,5 +1,8 @@
 # 0x04. Typescript
 
+![baea85b5e9a9fb5c36ec](https://github.com/Abucheri/alx-backend-javascript/assets/24778489/079cf1f6-ad2c-4adb-beb9-4bcea124f9f9)
+
+
 ## Configuration Files
 
 Please use these files for the following tasks
