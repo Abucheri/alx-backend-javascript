@@ -3,6 +3,29 @@
 ![82692897e15d9f03256f](https://github.com/Abucheri/alx-backend-javascript/assets/24778489/4b9250b5-8d91-44bb-a0c1-70256ab5b72d)
 
 
+This project demonstrates the basics of Node.js, including running JavaScript with Node.js, using Node.js modules, creating HTTP servers, and using Express.js for advanced routing. It also covers using ES6 syntax with Babel, automating development with Nodemon, and writing tests with Mocha and Chai.
+
+## Setup
+
+1. Clone the repository.
+2. Run `npm install` to install dependencies.
+3. Run `npm run dev` to start the development server with Nodemon.
+
+## Scripts
+
+- `npm run dev`: Start the development server with Nodemon.
+- `npm test`: Run the tests with Mocha.
+- `npm run lint`: Run ESLint to check for code style issues.
+
+## Features
+
+- Basic HTTP server with Node.js
+- Advanced routing with Express.js
+- ES6 syntax support with Babel
+- Automated development with Nodemon
+- Linting with ESLint
+- Testing with Mocha and Chai
+
 ## Provided files
 
 `database.csv`
