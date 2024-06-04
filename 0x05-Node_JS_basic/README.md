@@ -1,5 +1,8 @@
 # 0x05. NodeJS Basics
 
+![82692897e15d9f03256f](https://github.com/Abucheri/alx-backend-javascript/assets/24778489/4b9250b5-8d91-44bb-a0c1-70256ab5b72d)
+
+
 ## Provided files
 
 `database.csv`
