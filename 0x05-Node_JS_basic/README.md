@@ -15,7 +15,7 @@ This project demonstrates the basics of Node.js, including running JavaScript wi
 
 - `npm run dev`: Start the development server with Nodemon.
 - `npm test`: Run the tests with Mocha.
-- `npm run lint`: Run ESLint to check for code style issues.
+- `npm run lint <filename>`: Run ESLint to check for code style issues.
 
 ## Features
 
