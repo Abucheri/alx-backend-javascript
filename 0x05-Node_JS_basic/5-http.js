@@ -18,7 +18,7 @@ const app = http.createServer((req, res) => {
         fs.readFile(databasePath, 'utf8', (error, data) => {
           if (error) {
             res.writeHead(500, { 'Content-Type': 'text/plain' });
-            res.end('Internal Server Error');
+            res.end();
           } else {
             const rows = data.trim().split('\n').slice(1); // Remove header row
             const counters = {};
@@ -49,11 +49,11 @@ const app = http.createServer((req, res) => {
       })
       .catch(() => {
         res.writeHead(500, { 'Content-Type': 'text/plain' });
-        res.end('Internal Server Error');
+        res.end();
       });
   } else {
     res.writeHead(404, { 'Content-Type': 'text/plain' });
-    res.end('404 Not Found');
+    res.end();
   }
 });
 
