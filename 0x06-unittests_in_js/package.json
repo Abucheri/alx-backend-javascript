@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "lint": "eslint",
     "test": "mocha"
   },
   "keywords": [],
@@ -12,5 +13,6 @@
   "devDependencies": {
     "eslint": "^9.4.0",
     "mocha": "^10.4.0"
-  }
+  },
+  "dependencies": {}
 }
