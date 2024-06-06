@@ -1,0 +1,2 @@
+# for task 2, 
+npm install chai@4.3.6 mocha@9.2.2
