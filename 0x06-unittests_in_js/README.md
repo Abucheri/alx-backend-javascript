@@ -1,5 +1,8 @@
 # 0x06. Unittests in JS
 
+![90f79a666e174e6c4ffc](https://github.com/Abucheri/alx-backend-javascript/assets/24778489/08f68476-edb2-4cd5-9179-869e5eb2d8cf)
+
+
 ## Tasks
 
 0. Basic test with Mocha and Node assertion library
@@ -454,7 +457,7 @@
 	}
 	```
 
-		- Add an endpoint `POST /login` that returns the message `Welcome :username` where `:username` is the value of the body variable `userName`.
+	   - Add an endpoint `POST /login` that returns the message `Welcome :username` where `:username` is the value of the body variable `userName`.
 
 	- ***Modify the file `api.test.js`***:
 
